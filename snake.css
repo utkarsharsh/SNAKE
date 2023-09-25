@@ -1,0 +1,98 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+background-color: white;
+background-repeat: no-repeat;
+background-size:cover ;
+overflow: hidden;
+height: 100vh;
+  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.board{
+    border-radius: 33px;
+
+
+display: grid;
+grid-template-columns: repeat(18,1fr);
+grid-template-rows: repeat(18,1fr);
+border: 2px solid rgb(136, 241, 87);
+height: 100%;
+width: 60%;
+background-color: rgb(79, 81, 84);
+
+}
+.head{
+   
+
+    background:linear-gradient(red,yellow);
+    border-radius: 9px;
+}
+.snaker{
+    
+    background-color: purple;
+    border-radius: 50%;
+    background:linear-gradient(purple,pink);
+}
+.kana{
+    background:linear-gradient(rgb(30, 128, 0),rgb(255, 213, 0));
+}
+
+.score{
+    height: auto;
+    font-size: 25px;
+    color: rgb(6, 127, 28);
+    margin-bottom: 1rem;
+}
+
+
+.extra{
+    display: flex;
+   height: 90%;
+  width: 90%;
+   justify-content: center;
+   align-items: center;
+}
+.img1{
+    overflow: hidden;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.img1 img{
+    overflow: hidden;
+    height: 100%;
+    width:100%;
+    
+}
+.jadugari {
+    overflow: hidden;
+    height: 30%;
+    width: 70%;
+    position: absolute;
+    animation-name: saap;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes saap{
+0%{
+top: 0%;
+}
+50%{
+    top: 80%;
+
+}
+100%{
+    top: 0%;
+
+}
+
+}
